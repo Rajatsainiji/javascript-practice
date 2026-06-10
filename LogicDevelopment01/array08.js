@@ -47,9 +47,9 @@ sumFunction(arr);
 // [12, 45, 8, 67, 23]
 // Expected:
 // 67
- 
+
 const findLargestInArray = (arr) => {
-    let largest = arr[0];  
+    let largest = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > largest) {
             largest = arr[i];
@@ -57,6 +57,36 @@ const findLargestInArray = (arr) => {
     }
     console.log(largest);
 }
- 
+
 const arr = [12, 45, 8, 67, 23];
 findLargestInArray(arr);
+
+// Task 5
+// Count even numbers in: 
+// [1, 2, 3, 4, 5, 6, 7, 8] 
+// Expected:
+// 4 
+function countEven(arr) {
+    let evenNumbe = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            evenNumbe += 1;
+        }
+    }
+    console.log(evenNumbe)
+}
+const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+countEven(arr);
+
+// Reverse this array manually using a loop:
+// [1, 2, 3, 4, 5] 
+const reverse = (arr) => {
+    let reverseArray = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reverseArray.push(arr[i]);
+    }
+    console.log(reverseArray)
+}
+
+const arr = [1, 2, 3, 4, 5];
+reverse(arr);
